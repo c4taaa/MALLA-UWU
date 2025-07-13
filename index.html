@@ -1,17 +1,15 @@
-<<!DOCTYPE html>
+  <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <title>Malla Curricular Interactiva</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <h1>Malla Curricular Interactiva</h1>
   <div id="contenedor"></div>
 
   <script>
-    const ramos = [/* ← aquí irán los datos (ver más abajo) */];
-
     const contenedor = document.getElementById('contenedor');
     const aprobados = new Set();
 
@@ -67,7 +65,11 @@
       }
     });
 
-    // Datos reales de los ramos (continúa en la siguiente parte)
+    // Esperamos que ramos.js haya cargado la variable 'ramos'
+    window.onload = () => {
+      crearMalla();
+      actualizarRamos();
+    }
   </script>
 
   <script src="ramos.js"></script>
