@@ -1,0 +1,43 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f4f4;
+  padding: 20px;
+  color: #333;
+}
+
+.malla {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.semestre {
+  background: #fff;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  min-width: 200px;
+}
+
+.ramo {
+  margin: 5px 0;
+  padding: 8px;
+  border-radius: 6px;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.aprobado {
+  background: #4caf50;
+}
+.cursando {
+  background: #ff9800;
+}
+.pendiente {
+  background: #f44336;
+}
+
+.ramo:hover {
+  opacity: 0.8;
+}
