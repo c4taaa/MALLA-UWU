@@ -1,4 +1,4 @@
-  <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
@@ -8,6 +8,8 @@
 <body>
   <h1>Malla Curricular Interactiva</h1>
   <div id="contenedor"></div>
+
+  <script src="ramos.js"></script>
 
   <script>
     const contenedor = document.getElementById('contenedor');
@@ -57,21 +59,4 @@
         if (e.target.classList.contains('aprobado')) {
           e.target.classList.remove('aprobado');
           aprobados.delete(id);
-        } else {
-          e.target.classList.add('aprobado');
-          aprobados.add(id);
         }
-        actualizarRamos();
-      }
-    });
-
-    // Esperamos que ramos.js haya cargado la variable 'ramos'
-    window.onload = () => {
-      crearMalla();
-      actualizarRamos();
-    }
-  </script>
-
-  <script src="ramos.js"></script>
-</body>
-</html>
